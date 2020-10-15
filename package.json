@@ -1,0 +1,28 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "test project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savicj/harpoon.git"
+  },
+  "author": "Jana Savic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/savicj/harpoon/issues"
+  },
+  "homepage": "https://github.com/savicj/harpoon#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {
+    "gulp-autoprefixer": "^7.0.1"
+  }
+}
