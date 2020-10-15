@@ -7,12 +7,11 @@
 
 #btnLogin {
   margin: 1% 0 0 50%;
-  height: 5vh;
-  width: 8vw; }
+  background: linear-gradient(15deg, #324953 50%, #0f1c30 50%); }
 
 h1 {
   margin-top: 20%;
-  font-size: 60px;
+  font-size: 4vw;
   font-family: 'Bebas Neue', cursive; }
 
 main {
@@ -20,12 +19,12 @@ main {
   background-size: cover;
   text-align: center;
   color: white;
-  background: linear-gradient(25.5deg, #324953 50%, #0f1c30 50%); }
+  background: url("../../img/main.svg"), linear-gradient(25.5deg, #324953 50%, #0f1c30 50%); }
   main div {
-    padding-top: 27vh; }
+    padding-top: 10%; }
     main div .firstPageLabel {
       font-family: "Roboto Condensed", sans-serif;
-      font-size: large;
+      font-size: 1em;
       padding-bottom: 3%; }
 
 .arrowDown {
@@ -37,55 +36,83 @@ main {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg); }
 
+#btnLogin, h1, h2, .h, h4, #textdiv, #whitetext {
+  font-family: "Roboto Condensed", sans-serif; }
+
+.page {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-size: cover;
+  padding: 0 20vw 10vh 20vw; }
+  .page h2 {
+    padding-top: 5vh; }
+
+.page.whitetext {
+  color: white; }
+
+.btext {
+  color: #50cfd3; }
+
+.solid {
+  border-top: 3px solid #50cfd3;
+  position: absolute;
+  left: 0; }
+
 #secondPage h2, #fourthPage h2 {
   color: #3d5674;
-  font-size: 35px;
-  padding-bottom: 20px; }
+  font-size: 2em; }
 
 #secondPage p, #fourthPage p {
+  margin-top: 5vh;
   color: #3d5674; }
 
 #secondPage .h, #fourthPage .h {
   font-weight: bold;
-  font-size: 28px; }
-
-#fourthPage .btext {
-  color: #5ddee2;
-  font-weight: bold; }
-
-#fourthPage ul li {
-  color: #3d5674; }
-
-#fourthPage div h2 {
-  display: block;
-  padding-bottom: 30px; }
-
-#fourthPage div div {
-  width: 49%;
-  padding: 3%;
-  display: inline-block; }
-
-#fourthPage div .h {
-  font-size: 25px; }
+  font-size: 30px; }
 
 #thirdPage, #fifthPage {
   background: #0f1c30; }
   #thirdPage h2, #fifthPage h2 {
     color: white;
-    font-size: 35px;
-    padding-bottom: 20px; }
+    font-size: 2em; }
+  #thirdPage div, #fifthPage div {
+    margin-top: 5vh; }
   #thirdPage #whitetext, #fifthPage #whitetext {
     color: white; }
   #thirdPage .btext, #fifthPage .btext {
-    color: #5ddee2; }
+    color: #50cfd3; }
 
-#thirdPage div {
-  padding-top: 5%; }
+#secondPage .solid {
+  width: 31%; }
+
+#secondPage div {
+  width: 55%;
+  display: inline-block;
+  padding-top: 10%; }
+  #secondPage div .text {
+    font-family: 'Roboto', sans-serif; }
+
+#thirdPage {
+  background: url("../../img/page3.svg"), #0f1c30;
+  background-size: cover; }
+  #thirdPage .solid {
+    width: 33vw; }
   #thirdPage div div {
     display: inline-block;
     width: 49%;
-    padding-top: 3%;
-    padding-left: 5%; }
+    padding-right: 5%;
+    padding-top: 2%; }
+    #thirdPage div div .btext {
+      font-style: italic;
+      padding-top: 3vh; }
+    #thirdPage div div .whitetext {
+      font-weight: lighter;
+      padding-top: 6vh; }
+    #thirdPage div div button {
+      margin: 10px 0 20px 0;
+      background-color: transparent;
+      border: 2px solid #50cfd3; }
   #thirdPage div #textdiv {
     display: block;
     width: -webkit-max-content;
@@ -97,16 +124,101 @@ main {
     font-size: 25px;
     font-weight: bold; }
 
-.page {
-  font-family: "Roboto Condensed", sans-serif;
-  height: 100vh;
-  background-size: cover;
-  padding: 0 20vw; }
-  .page h2 {
-    padding-top: 5vh; }
+#fourthPage h2 {
+  display: block; }
 
-.page.whitetext {
-  color: white; }
+#fourthPage .solid {
+  width: 35%; }
 
-.btext {
-  color: #5ddee2; }
+#fourthPage div .h {
+  font-size: 2vw; }
+
+#fourthPage div div {
+  -webkit-column-count: 2;
+     -moz-column-count: 2;
+          column-count: 2;
+  width: 49.5%;
+  display: inline-block; }
+  #fourthPage div div img {
+    display: inline-block;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px; }
+  #fourthPage div div .btext {
+    color: #50cfd3;
+    font-weight: bold;
+    font-size: large; }
+
+#fourthPage div #textheader {
+  -webkit-column-count: 1;
+     -moz-column-count: 1;
+          column-count: 1;
+  padding-left: 10px; }
+
+#fourthPage div ul li {
+  color: #3d5674; }
+
+#fifthPage {
+  background: url("../../img/page5.svg"), #0f1c30; }
+  #fifthPage .solid {
+    width: 37%; }
+  #fifthPage div p {
+    padding-top: 5%; }
+  #fifthPage div .whitetext {
+    display: block;
+    width: 40vw;
+    text-align: left;
+    font-size: 2em;
+    font-weight: bold; }
+  #fifthPage div .btext {
+    font-style: italic; }
+  #fifthPage div img {
+    padding-top: 5px; }
+    #fifthPage div img #last {
+      color: white; }
+
+button {
+  color: white;
+  height: 5vh;
+  width: 8vw; }
+
+footer {
+  text-align: center;
+  background: #50cfd3;
+  color: white;
+  height: 25px; }
+
+@media screen and (max-width: 1000px) {
+  main {
+    background-image: none;
+    background: linear-gradient(25.5deg, #324953 50%, #0f1c30 50%); }
+    main img {
+      width: 35vw; }
+    main button {
+      width: 20vw;
+      background: #324953; }
+  #thirdPage {
+    background-image: none;
+    background: #0f1c30; }
+    #thirdPage div {
+      display: block;
+      min-width: 35vw;
+      text-align: center; }
+      #thirdPage div #textdiv {
+        max-width: 50vw; }
+      #thirdPage div button {
+        min-width: -webkit-max-content;
+        min-width: -moz-max-content;
+        min-width: max-content; }
+  #fourthPage div {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content; }
+    #fourthPage div .h {
+      font-size: 5vw;
+      text-align: left; }
+    #fourthPage div div {
+      padding-top: 25px;
+      -webkit-column-count: 1;
+         -moz-column-count: 1;
+              column-count: 1; } }
