@@ -100,23 +100,32 @@ main {
   #secondPage #text .text {
     font-family: 'Roboto', sans-serif; }
 
-#secondPage #imgs {
+#secondPage div .imgs {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  height: 120px;
+  width: 120px;
   display: inline; }
-
-#secondPage img {
-  width: 35%;
-  float: right; }
+  #secondPage div .imgs #1 {
+    background: url("../../img/rawpixel-com-252130.svg") #0f1c30; }
 
 #thirdPage {
   background: url("../../img/page3.svg"), #0f1c30;
   background-size: cover; }
-  #thirdPage .solid {
-    width: 33vw; }
+  #thirdPage hr {
+    width: 29%; }
+  #thirdPage div #elroy {
+    background-color: #15264156;
+    -webkit-box-shadow: 3px 5px 10px black;
+            box-shadow: 3px 5px 10px black;
+    border: 0.3px solid white; }
+    #thirdPage div #elroy button {
+      background: linear-gradient(15deg, #324953 50%, #0f1c30 50%); }
   #thirdPage div div {
     display: inline-block;
-    width: 49%;
-    padding-right: 5%;
-    padding-top: 2%; }
+    width: 42%;
+    padding: 10px;
+    margin-right: 5vw; }
     #thirdPage div div .btext {
       font-style: italic;
       padding-top: 3vh; }
@@ -144,7 +153,6 @@ main {
 
 #fourthPage div .h {
   font-size: 2vw;
-  display: block;
   max-width: 50%; }
 
 #fourthPage div div {
@@ -172,7 +180,8 @@ main {
 
 #fourthPage div ul li {
   color: #3d5674;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  padding-bottom: 5px; }
 
 #fifthPage {
   background: url("../../img/page5.svg"), #0f1c30; }
@@ -219,6 +228,8 @@ footer {
     main nav #btnLogin {
       width: 20vw;
       background: transparent; }
+    main .arrowDown {
+      margin-bottom: 5%; }
   hr {
     display: none; }
   h2 {

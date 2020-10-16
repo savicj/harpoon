@@ -3,7 +3,7 @@ $font: 'Roboto Condensed', sans-serif;
 $blue: rgb(61, 86, 116);
 $lighterblue: rgb(80, 207, 211);
 $backgroundblue:  #0f1c30;
-$transparentblue:  #0f1c30d5;
+$transparentblue:  #15264156;
 
 
 * {
@@ -66,6 +66,7 @@ main{
 #btnLogin, h1, h2, .h, h4, #textdiv, #whitetext{
     font-family: $font;
 }
+
 
 .page {
     height: fit-content;
@@ -138,40 +139,55 @@ main{
             font-family: 'Roboto', sans-serif;
         }
     }
-    #imgs{
-        display: inline;
+    div{
+        .imgs{
+
+            transform: rotate(45deg);
+            height: 120px;
+            width: 120px;
+            display: inline;
+            #1{
+                background: url('../../img/rawpixel-com-252130.svg') $backgroundblue;
+            }
+        }
     }
-    img{
-        width: 35%;
-        float: right;
-    }
+    // #imgs{
+    //     display: inline;
+    // }
+    // img{
+    //     width: 35%;
+    //     float: right;
+    // }
 }
   
 
 #thirdPage{
-    .solid{
-        width: 33vw;
+    hr{
+        width: 29%;
     }
     background: url('../../img/page3.svg'), $backgroundblue;
     background-size: cover;
     div{
+        #elroy{
+            background-color: $transparentblue;
+           box-shadow: 3px 5px 10px black ;
+           border: 0.3px solid $white;
+           button{
+               background: linear-gradient(15deg, #324953 50%, $backgroundblue 50%);
+           }
+        }
         div{
             display: inline-block;
-            width: 49%;
-            padding-right: 5%;
-            padding-top: 2%;
-            // img{
-            //     padding-bottom: 5%;
-            // }
+            width: 42%;
+            padding: 10px;
+            margin-right: 5vw;
+            //margin-top: 2%;
             .btext{
                 font-style: italic;
                 padding-top: 3vh;
             }
             .whitetext{
-                //font-weight: lighter;
-                padding-top: 6vh;
-                //font-stretch: extra-expanded;
-            }
+                padding-top: 6vh;            }
             button{
                 margin: 10px 0 20px 0;
                 background-color: transparent;
@@ -182,8 +198,6 @@ main{
             display: block;
             width: max-content;
             padding: 10% 20% 5% 20%;
-            //padding-right: ;
-            // padding-top: 10%;
             text-align: center;
             font-size: 25px;
             font-weight: bold;
@@ -198,15 +212,15 @@ main{
     .solid{
         width: 35%;
     }
+
+    
     div{
         .h{
             font-size: 2vw;
-            display: block;
             max-width: 50%;
         }
         
         div{
-            //margin-top: 45px;
             column-count: 2;
             img{
                 display: inline-block;
@@ -231,6 +245,7 @@ main{
             li{
                 color: $blue;
                 line-height: 1.5em;
+                padding-bottom: 5px;
             }
         }
         
@@ -302,6 +317,9 @@ footer{
                 background: transparent;
                 //border: 1px solid #324953;
             }
+        }
+        .arrowDown{
+            margin-bottom: 5%;
         }
     }
 
