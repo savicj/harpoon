@@ -247,12 +247,16 @@ footer {
   #secondPage {
     text-align: center;
     padding: 0 5vw 7vh 5vw; }
-    #secondPage div #text .h, #secondPage div #text .text {
-      font-size: 3vw; }
-    #secondPage div #text .text {
-      padding-top: 2em;
-      text-align: justify; }
-    #secondPage div img {
+    #secondPage div #text {
+      min-width: -webkit-fit-content;
+      min-width: -moz-fit-content;
+      min-width: fit-content; }
+      #secondPage div #text .h, #secondPage div #text .text {
+        font-size: 3vw; }
+      #secondPage div #text .text {
+        padding-top: 2em;
+        text-align: justify; }
+    #secondPage div .images {
       display: none; }
   #thirdPage {
     background-image: none;

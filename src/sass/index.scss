@@ -330,11 +330,13 @@ footer{
         padding: 0 8vw 7vh 8vw;
 
     }
+
     #secondPage{
         text-align: center;
         padding: 0 5vw 7vh 5vw;
         div{
             #text{
+                min-width: fit-content  ;
                 .h, .text{
                     font-size: 3vw;
                 }
@@ -343,7 +345,7 @@ footer{
                     text-align: justify;
                 }
             }
-            img{
+            .images{
                 display: none;
             }
         }
