@@ -130,34 +130,28 @@ main{
     .solid{
         width: 31%;
     }
-    #text{
-        width: 55%;
-        max-width: 55%;
-        display: inline-block;
-        padding: 8% 0;
-        .text{
-            font-family: 'Roboto', sans-serif;
-        }
-    }
     div{
-        .imgs{
-
-            transform: rotate(45deg);
-            height: 120px;
-            width: 120px;
-            display: inline;
-            #1{
-                background: url('../../img/rawpixel-com-252130.svg') $backgroundblue;
+        display: inline-flex;        
+        #text{
+            width: 55%;
+            max-width: 55%;
+            display: inline-flex;
+            flex-direction: column;
+            padding: 5% ;
+           
+            .text{
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+        .images{
+            max-width: 43%;
+            max-height: 70vh;
+            img{
+                max-width: 100%;
+                max-height: 100%;
             }
         }
     }
-    // #imgs{
-    //     display: inline;
-    // }
-    // img{
-    //     width: 35%;
-    //     float: right;
-    // }
 }
   
 
