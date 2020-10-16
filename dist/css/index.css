@@ -159,8 +159,7 @@ main {
   width: 35%; }
 
 #fourthPage div .h {
-  font-size: 2vw;
-  max-width: 50%; }
+  font-size: 2vw; }
 
 #fourthPage div div {
   -webkit-column-count: 2;
@@ -171,13 +170,12 @@ main {
   #fourthPage div div img {
     display: inline-block;
     border-radius: 50%;
-    height: 130px;
-    width: 130px; }
+    height: 120px;
+    width: 120px; }
   #fourthPage div div .btext {
     color: #50cfd3;
     font-weight: bold;
-    font-size: large;
-    padding-top: 1em; }
+    font-size: large; }
 
 #fourthPage div #textheader {
   -webkit-column-count: 1;
@@ -186,9 +184,7 @@ main {
   padding-left: 10px; }
 
 #fourthPage div ul li {
-  color: #3d5674;
-  line-height: 1.5em;
-  padding-bottom: 5px; }
+  color: #3d5674; }
 
 #fifthPage {
   background: url("../../img/page5.svg"), #0f1c30; }

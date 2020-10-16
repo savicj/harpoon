@@ -206,27 +206,23 @@ main{
     .solid{
         width: 35%;
     }
-
-    
     div{
         .h{
             font-size: 2vw;
-            max-width: 50%;
         }
-        
         div{
+            //margin-top: 45px;
             column-count: 2;
             img{
                 display: inline-block;
                 border-radius: 50%;
-                height: 130px;
-                width: 130px;
+                height: 120px;
+                width: 120px;
             }
             .btext{
                 color: $lighterblue;
                 font-weight: bold;
                 font-size: large;
-                padding-top: 1em;
             }
             width: 49.5%;
             display: inline-block;
@@ -238,8 +234,6 @@ main{
         ul{
             li{
                 color: $blue;
-                line-height: 1.5em;
-                padding-bottom: 5px;
             }
         }
         
