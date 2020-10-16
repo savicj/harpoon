@@ -13,11 +13,7 @@ $transparentblue:  #0f1c30d5;
     font-family: Arial, Helvetica, sans-serif;
   }
   
-#btnLogin{
-    margin: 1% 0 0 50%;
-    background: linear-gradient(15deg, #324953 50%, $backgroundblue 50%);
 
-    }
   
 h1{
     margin-top: 20%;
@@ -25,6 +21,13 @@ h1{
     font-family: 'Bebas Neue', cursive;
 }
 main{
+    nav{
+        #btnLogin{
+            margin: 1% 0 0 50%;
+            background: linear-gradient(15deg, #324953 50%, $backgroundblue 50%);
+        
+            }
+    }
     height: 100vh;
     background-size: cover;
     text-align: center;
@@ -40,6 +43,9 @@ main{
             padding-bottom: 3%;
         }
     }
+    img{
+        width: 35vw;
+    }
    
 }
 
@@ -51,6 +57,9 @@ main{
     padding: 3px;
     margin-top: 5px;
     transform: rotate(45deg);
+    &:hover{
+        padding: 10px;
+    }
 }
 
 
@@ -61,7 +70,7 @@ main{
 .page {
     height: fit-content;
     background-size: cover;
-    padding: 0 20vw 10vh 20vw;
+    padding: 0 15vw 10vh 15vw;
     h2{
         padding-top: 5vh;
     }
@@ -73,6 +82,10 @@ main{
 
 .btext {
     color: $lighterblue;
+}
+
+.text, .whitetext{
+    line-height: 2em;
 }
 
 .solid{
@@ -116,13 +129,21 @@ main{
     .solid{
         width: 31%;
     }
-    div{
+    #text{
         width: 55%;
+        max-width: 55%;
         display: inline-block;
-        padding-top: 10%;
+        padding: 8% 0;
         .text{
             font-family: 'Roboto', sans-serif;
         }
+    }
+    #imgs{
+        display: inline;
+    }
+    img{
+        width: 35%;
+        float: right;
     }
 }
   
@@ -147,8 +168,9 @@ main{
                 padding-top: 3vh;
             }
             .whitetext{
-                font-weight: lighter;
+                //font-weight: lighter;
                 padding-top: 6vh;
+                //font-stretch: extra-expanded;
             }
             button{
                 margin: 10px 0 20px 0;
@@ -159,8 +181,9 @@ main{
         #textdiv{
             display: block;
             width: max-content;
-            padding-left: 20%;
-            padding-top: 10%;
+            padding: 10% 20% 5% 20%;
+            //padding-right: ;
+            // padding-top: 10%;
             text-align: center;
             font-size: 25px;
             font-weight: bold;
@@ -178,20 +201,24 @@ main{
     div{
         .h{
             font-size: 2vw;
+            display: block;
+            max-width: 50%;
         }
+        
         div{
             //margin-top: 45px;
             column-count: 2;
             img{
                 display: inline-block;
                 border-radius: 50%;
-                height: 120px;
-                width: 120px;
+                height: 130px;
+                width: 130px;
             }
             .btext{
                 color: $lighterblue;
                 font-weight: bold;
                 font-size: large;
+                padding-top: 1em;
             }
             width: 49.5%;
             display: inline-block;
@@ -203,6 +230,7 @@ main{
         ul{
             li{
                 color: $blue;
+                line-height: 1.5em;
             }
         }
         
@@ -223,6 +251,8 @@ main{
             text-align: left;
             font-size: 2em;
             font-weight: bold;
+            line-height: 1em;
+
         }
         .btext{
             font-style: italic;
@@ -230,7 +260,7 @@ main{
         img{
             padding-top: 5px;
             #last{
-                color: $white;
+                color: $white   ;
             }
         }
     }
@@ -240,6 +270,9 @@ button{
     color: $white;
     height: 5vh;
     width: 8vw;
+    &:hover{
+        color: $lighterblue;
+    }
 }
    
 
@@ -255,31 +288,72 @@ footer{
 
 @media screen and (max-width: 1000px){
 
+
     main{
+        height: max-content;
         background-image: none;
         background: linear-gradient(25.5deg, #324953 50%, $backgroundblue 50%);
         img{
             width: 35vw;
         }
-        button{
-            width: 20vw;
-            background: #324953;
+        nav{
+            #btnLogin{
+                width: 20vw;
+                background: transparent;
+                //border: 1px solid #324953;
+            }
         }
     }
 
+
+    hr{
+        display: none;
+    }
+    h2{
+        font-size: 4vw;
+        text-align: center;
+    }
+
+    .page{
+        padding: 0 8vw 7vh 8vw;
+
+    }
+    #secondPage{
+        text-align: center;
+        padding: 0 5vw 7vh 5vw;
+        div{
+            #text{
+                .h, .text{
+                    font-size: 3vw;
+                }
+                .text{
+                    padding-top: 2em;
+                    text-align: justify;
+                }
+            }
+            img{
+                display: none;
+            }
+        }
+    }
     #thirdPage{
         div{
-            display: block;
-            min-width: 35vw;
-            text-align: center;
+            div, #textdiv{
+                min-width: fit-content;
+                display: block;
+                text-align: center;
+                padding-left: 10vw;
+                padding-right: 10vw;
+            }
+            div{
+                button{
+                    min-width: max-content;
+                }
+            }
             #textdiv{
                 max-width: 50vw;
             }
-            button{
-                min-width: max-content;
-            }
         }
-        
         background-image: none;
         background: $backgroundblue;
     }
@@ -288,18 +362,30 @@ footer{
         
         div{
             min-width: fit-content;
-            //text-align: center;
+            div, .h{
+                padding-left: 10vw;
+                padding-right: 10vw;
+            }
             .h{
-                font-size: 5vw;
-                text-align: left;
+                font-size: 4vw;
+                text-align: center;
+                min-width: fit-content;
             }
             div{
+                padding-left: 20vw;
+                padding-right: 20vw;
                 padding-top: 25px;
                 column-count: 1;
             }
         }
     }
 
+    #fifthPage{
+        .whitetext{
+            //width: 90vw;
+            min-width: fit-content;
+        }
+    }
 
 
 }

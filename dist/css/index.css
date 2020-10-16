@@ -5,10 +5,6 @@
           box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif; }
 
-#btnLogin {
-  margin: 1% 0 0 50%;
-  background: linear-gradient(15deg, #324953 50%, #0f1c30 50%); }
-
 h1 {
   margin-top: 20%;
   font-size: 4vw;
@@ -20,12 +16,17 @@ main {
   text-align: center;
   color: white;
   background: url("../../img/main.svg"), linear-gradient(25.5deg, #324953 50%, #0f1c30 50%); }
+  main nav #btnLogin {
+    margin: 1% 0 0 50%;
+    background: linear-gradient(15deg, #324953 50%, #0f1c30 50%); }
   main div {
     padding-top: 10%; }
     main div .firstPageLabel {
       font-family: "Roboto Condensed", sans-serif;
       font-size: 1em;
       padding-bottom: 3%; }
+  main img {
+    width: 35vw; }
 
 .arrowDown {
   border: solid white;
@@ -35,6 +36,8 @@ main {
   margin-top: 5px;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg); }
+  .arrowDown:hover {
+    padding: 10px; }
 
 #btnLogin, h1, h2, .h, h4, #textdiv, #whitetext {
   font-family: "Roboto Condensed", sans-serif; }
@@ -44,7 +47,7 @@ main {
   height: -moz-fit-content;
   height: fit-content;
   background-size: cover;
-  padding: 0 20vw 10vh 20vw; }
+  padding: 0 15vw 10vh 15vw; }
   .page h2 {
     padding-top: 5vh; }
 
@@ -53,6 +56,9 @@ main {
 
 .btext {
   color: #50cfd3; }
+
+.text, .whitetext {
+  line-height: 2em; }
 
 .solid {
   border-top: 3px solid #50cfd3;
@@ -86,12 +92,20 @@ main {
 #secondPage .solid {
   width: 31%; }
 
-#secondPage div {
+#secondPage #text {
   width: 55%;
+  max-width: 55%;
   display: inline-block;
-  padding-top: 10%; }
-  #secondPage div .text {
+  padding: 8% 0; }
+  #secondPage #text .text {
     font-family: 'Roboto', sans-serif; }
+
+#secondPage #imgs {
+  display: inline; }
+
+#secondPage img {
+  width: 35%;
+  float: right; }
 
 #thirdPage {
   background: url("../../img/page3.svg"), #0f1c30;
@@ -107,7 +121,6 @@ main {
       font-style: italic;
       padding-top: 3vh; }
     #thirdPage div div .whitetext {
-      font-weight: lighter;
       padding-top: 6vh; }
     #thirdPage div div button {
       margin: 10px 0 20px 0;
@@ -118,8 +131,7 @@ main {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    padding-left: 20%;
-    padding-top: 10%;
+    padding: 10% 20% 5% 20%;
     text-align: center;
     font-size: 25px;
     font-weight: bold; }
@@ -131,7 +143,9 @@ main {
   width: 35%; }
 
 #fourthPage div .h {
-  font-size: 2vw; }
+  font-size: 2vw;
+  display: block;
+  max-width: 50%; }
 
 #fourthPage div div {
   -webkit-column-count: 2;
@@ -142,12 +156,13 @@ main {
   #fourthPage div div img {
     display: inline-block;
     border-radius: 50%;
-    height: 120px;
-    width: 120px; }
+    height: 130px;
+    width: 130px; }
   #fourthPage div div .btext {
     color: #50cfd3;
     font-weight: bold;
-    font-size: large; }
+    font-size: large;
+    padding-top: 1em; }
 
 #fourthPage div #textheader {
   -webkit-column-count: 1;
@@ -156,7 +171,8 @@ main {
   padding-left: 10px; }
 
 #fourthPage div ul li {
-  color: #3d5674; }
+  color: #3d5674;
+  line-height: 1.5em; }
 
 #fifthPage {
   background: url("../../img/page5.svg"), #0f1c30; }
@@ -169,7 +185,8 @@ main {
     width: 40vw;
     text-align: left;
     font-size: 2em;
-    font-weight: bold; }
+    font-weight: bold;
+    line-height: 1em; }
   #fifthPage div .btext {
     font-style: italic; }
   #fifthPage div img {
@@ -181,6 +198,8 @@ button {
   color: white;
   height: 5vh;
   width: 8vw; }
+  button:hover {
+    color: #50cfd3; }
 
 footer {
   text-align: center;
@@ -190,35 +209,71 @@ footer {
 
 @media screen and (max-width: 1000px) {
   main {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     background-image: none;
     background: linear-gradient(25.5deg, #324953 50%, #0f1c30 50%); }
     main img {
       width: 35vw; }
-    main button {
+    main nav #btnLogin {
       width: 20vw;
-      background: #324953; }
+      background: transparent; }
+  hr {
+    display: none; }
+  h2 {
+    font-size: 4vw;
+    text-align: center; }
+  .page {
+    padding: 0 8vw 7vh 8vw; }
+  #secondPage {
+    text-align: center;
+    padding: 0 5vw 7vh 5vw; }
+    #secondPage div #text .h, #secondPage div #text .text {
+      font-size: 3vw; }
+    #secondPage div #text .text {
+      padding-top: 2em;
+      text-align: justify; }
+    #secondPage div img {
+      display: none; }
   #thirdPage {
     background-image: none;
     background: #0f1c30; }
-    #thirdPage div {
+    #thirdPage div div, #thirdPage div #textdiv {
+      min-width: -webkit-fit-content;
+      min-width: -moz-fit-content;
+      min-width: fit-content;
       display: block;
-      min-width: 35vw;
-      text-align: center; }
-      #thirdPage div #textdiv {
-        max-width: 50vw; }
-      #thirdPage div button {
-        min-width: -webkit-max-content;
-        min-width: -moz-max-content;
-        min-width: max-content; }
+      text-align: center;
+      padding-left: 10vw;
+      padding-right: 10vw; }
+    #thirdPage div div button {
+      min-width: -webkit-max-content;
+      min-width: -moz-max-content;
+      min-width: max-content; }
+    #thirdPage div #textdiv {
+      max-width: 50vw; }
   #fourthPage div {
     min-width: -webkit-fit-content;
     min-width: -moz-fit-content;
     min-width: fit-content; }
+    #fourthPage div div, #fourthPage div .h {
+      padding-left: 10vw;
+      padding-right: 10vw; }
     #fourthPage div .h {
-      font-size: 5vw;
-      text-align: left; }
+      font-size: 4vw;
+      text-align: center;
+      min-width: -webkit-fit-content;
+      min-width: -moz-fit-content;
+      min-width: fit-content; }
     #fourthPage div div {
+      padding-left: 20vw;
+      padding-right: 20vw;
       padding-top: 25px;
       -webkit-column-count: 1;
          -moz-column-count: 1;
-              column-count: 1; } }
+              column-count: 1; }
+  #fifthPage .whitetext {
+    min-width: -webkit-fit-content;
+    min-width: -moz-fit-content;
+    min-width: fit-content; } }
